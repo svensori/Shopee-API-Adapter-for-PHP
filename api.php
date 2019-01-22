@@ -138,19 +138,19 @@ class ShopeeAPI extends ShopeeOpenPlatform{
 */
 ShopeeOpenPlatform::$host = 'partner.uat.shopeemobile.com';
 ShopeeOpenPlatform::$url = 'https://partner.uat.shopeemobile.com/';
-ShopeeOpenPlatform::$link_back = 'https://www.stockpile.ph';
-ShopeeOpenPlatform::setPartnerID(100084);
-ShopeeOpenPlatform::setPartnerKey('c151a4ff0bf7c4d9ace141ee844df2f48aae6733635c7ca2836a1bb6baa5289c');
+ShopeeOpenPlatform::$link_back = ''; //Required
+ShopeeOpenPlatform::setPartnerID(''); //Required
+ShopeeOpenPlatform::setPartnerKey(''); //Required
 
 /*
 *Returns Authorization URL
-*echo ShopeeOpenPlatform::buildAuthURL();
+*echo ShopeeOpenPlatform::buildAuthURL(); //Run this on initial load to get Auth URL where you can get the Shop ID.  
 */
 
 /*
 *Set shop ID which came from authorization
 */
-// ShopeeOpenPlatform::setShopID(209101);
+// ShopeeOpenPlatform::setShopID(<PUT SHOP_ID HERE W/C CAME FROM AUTH URL>); 
 
 /*
 *Instantiate API
