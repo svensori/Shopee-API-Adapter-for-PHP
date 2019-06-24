@@ -127,7 +127,7 @@ class ShopeeAPI extends ShopeeOpenPlatform{
 		curl_setopt($ch, CURLOPT_HEADER, true);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $this->createRequestHeader($post_fields));
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_fields));
-		curl_setopt($ch, CURLOPT_CAINFO, "C:\Users\TPH-OFFICE-1.TPH-OFFICE-1-PC\Desktop\cacert.pem");
+		curl_setopt($ch, CURLOPT_CAINFO, "cacert.pem");
 		curl_exec($ch);
 		curl_close($ch);
 	}
